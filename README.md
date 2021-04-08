@@ -1,4 +1,4 @@
-# University of Ibadan Computers SCience Exercises
+# University of Ibadan Computers Science Exercises
 
 A set of exercise for all levels in university of Ibadan, codes here are due to changes.
 
