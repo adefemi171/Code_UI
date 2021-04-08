@@ -1,10 +1,19 @@
 # University of Ibadan Computers Science Exercises
 
-A set of exercise for all levels in university of Ibadan, codes here are due to changes.
+A set of solution to exercises for Computer Science Students in all levels at the University of Ibadan, codes here are due to changes.
 
 
 ## Contents
-- [DSA](https://github.com/adefemi171/Code_UI/tree/main/DSA)
+- 200 LEVEL
+    - [Scientific Programming](https://github.com/adefemi171/Code_UI/tree/main/Sci_Pro)
+    - [Object Oriented Programming](https://github.com/adefemi171/Code_UI/tree/main/OOP)
+
+- 300 LEVEL
+    - [DSA](https://github.com/adefemi171/Code_UI/tree/main/DSA)
+
+
+- 400 LEVEL
+    - [Compiling Technique](https://github.com/adefemi171/Code_UI/tree/main/Comp_Technique)
 
 
 
