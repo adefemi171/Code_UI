@@ -22,5 +22,15 @@ python lexer.py
 ```
 The output is saved into a .txt file and also displayed in the terminal.
 
-2. 
+## Problem 2
+1. Write a program to receive an infix arithmetic expression to postfix notation and get the value of the expression.
+
+## Solution 1
+1. Used Python for this problem for both conversion of Infix to Postfix notation and also evaluated the expression
+
+- To run this program:
+```
+python infixToPostfix.py
+```
+The output is displayed in the terminal.
 
