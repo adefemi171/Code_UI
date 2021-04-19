@@ -8,7 +8,6 @@ CREATE TABLE Product(pid INT NOT NULL,
                      FOREIGN KEY(sid) REFERENCES Store(sid),
                      FOREIGN KEY(cid) REFERENCES Category(cid));
 
-
 CREATE TABLE Store(sid INT NOT NULL, 
                     store_name VARCHAR(30) NOT NULL,
                     CONSTRAINT PK_Store PRIMARY KEY(sid));
@@ -24,13 +23,30 @@ CREATE TABLE Supplier(supplier_id INT NOT NULL,
                      pid INT NOT NULL,
                      CONSTRAINT PK_Supplier PRIMARY KEY(supplier_id),
                      FOREIGN KEY(sid) REFERENCES Store(sid),
-                     FOREIGN KEY(pid) REFERENCES Product(pid));
+                     FOREIGN KEY(pid) REFERENCES Product(pid)); 
 
-INSERT INTO Product(pid, bid, pname, unit_price, sid, cid) VALUES(1, 0010, 'Milo', 2999.99, 1, 2),
-                                                                (2, 0025, 'Mcvities Biscuit', 399.99, 4, 4),
-                                                                (3, 0020, 'Dangote Sugar', 249.99, 5, 3),
-                                                                (4, 0015, "Dano Milk", 2479.89, 3, 5),
-                                                                (5, 0025, 'Bod Man Spray', 6270.55, 2, 1);
+CREATE TABLE Sale(sales_id INT NOT NULL, 
+                    date DATE NOT NULL,
+                    quantity INT NOT NULL,
+                    sid INT NOT NULL,
+                    pid INT NOT NULL,
+                    CONSTRAINT PK_Sales PRIMARY KEY(sales_id),
+                    FOREIGN KEY(sid) REFERENCES Store(sid),
+                    FOREIGN KEY(pid) REFERENCES Product(pid));
+
+
+INSERT INTO Sale(sales_id, date, quantity, sid, pid) VALUES(1, '2021-02-01', 3, 2, 1),
+                                                                (2, '2021-02-12', 6, 4, 3),
+                                                                (3, '2021-03-06', 5, 3, 4),
+                                                                (4, '2021-04-07', 1, 1, 5),
+                                                                (5, '2021-04-14', 4, 5, 2);
+
+
+INSERT INTO Product(pid, bid, pname, unit_price, sid, cid) VALUES(1, 'A-0010-Z', 'Milo', 2999.99, 1, 2),
+                                                                (2, 'A-0030-Z', 'Mcvities Biscuit', 399.99, 4, 4),
+                                                                (3, 'A-0020-Z', 'Dangote Sugar', 249.99, 5, 3),
+                                                                (4, 'A-0015-Z', "Dano Milk", 2479.89, 3, 5),
+                                                                (5, 'A-0025-Z', 'Bod Man Spray', 6270.55, 2, 1);
 INSERT INTO Store(sid, store_name) VALUES(1, 'Dugbe Market'),
                                          (2, 'Dugbe Railway'),
                                          (3, 'Dugbe Onireke'),
