@@ -32,5 +32,10 @@ The output is saved into a .txt file and also displayed in the terminal.
 ```
 python infixToPostfix.py
 ```
+
+Example of an infix expreesion you can pass:
+```
+3*(2+1)-2/2
+```
 The output is displayed in the terminal.
 
