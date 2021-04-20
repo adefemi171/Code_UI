@@ -139,5 +139,14 @@ st = MyClass()
 infixVal = input("Please enter your infix expression: \n")
 postfix_exp = st.infixToPostfix(infixVal)
 
+print('-------------------------------------------------------------------- \n')
+print("Infix Expression \n" + infixVal)
+
+print('-------------------------------------------------------------------- \n')
+print("converted to Postfix notation is: \n")
+print(postfix_exp)
+
 evaluation = st.evaluatePostfix(postfix_exp)
-print(evaluation)
+print('------------------------------------------- \n')
+print("Postfix notation has been evaluated to: " + str(evaluation))
+# print(evaluation)

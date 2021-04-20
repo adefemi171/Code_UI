@@ -13,7 +13,9 @@ A set of solution to exercises for Computer Science Students in all levels at th
 
 
 - 400 LEVEL
-    - [Compiling Technique](https://github.com/adefemi171/Code_UI/tree/main/Comp_Technique)
+    - [Compiling Technique](https://github.com/adefemi171/Code_UI/tree/main/Comp_Techniques)
+    - [Database Systems](https://github.com/adefemi171/Code_UI/tree/main/DBMS)
+    - [Theory Of Computation](https://github.com/adefemi171/Code_UI/tree/main/TOC)
 
 
 
