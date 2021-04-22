@@ -3,7 +3,7 @@ import java.util.Scanner;
 import java.util.Stack;
 import java.util.regex.*;
 
-public class main {
+public class infixToPostFix {
 
     private static Pattern digitMatcher = Pattern.compile("[0-9\\.]+");
     private static Pattern operatorMatcher = Pattern.compile("[+\\-/*()^]");
