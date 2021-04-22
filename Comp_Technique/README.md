@@ -38,4 +38,17 @@ Example of an infix expreesion you can pass:
 3*(2+1)-2/2
 ```
 The output is displayed in the terminal.
+## Solution 2
+1. Used Java for this problem for both conversion of Infix to Postfix notation and also evaluated the expression
+
+- To run this program:
+```
+javac infixToPostfix.java && java infixToPostfix
+```
+
+Example of an infix expreesion you can pass:
+```
+3*(2+1)-2/2
+```
+The output is displayed in the terminal.
 
